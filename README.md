@@ -1,4 +1,4 @@
-Team Member Name: ____________________ Role: (Architect / Physics / Growth / UI)
+**Team Member Name: ____________________ Role: (Architect / Physics / Growth / UI)**
 
 Contributions:
 
@@ -14,7 +14,7 @@ Team Rating:
 
 
 
-Team Member Name: ____________________ Role: (Architect / Physics / Growth / UI)
+**Team Member Name: ____________________ Role: (Architect / Physics / Growth / UI)**
 
 Contributions:
 
@@ -30,7 +30,7 @@ Team Rating:
 
 
 
-Team Member Name: ____________________ Role: (Architect / Physics / Growth / UI)
+**Team Member Name: ____________________ Role: (Architect / Physics / Growth / UI)**
 
 Contributions:
 
