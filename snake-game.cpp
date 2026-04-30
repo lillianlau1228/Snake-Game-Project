@@ -32,11 +32,34 @@ void Draw() {
     system("cls"); // Clears the console
     
     // Example: Top Wall
-    for (int i = 0; i < width + 2; i++) cout << "#";
+    for (int i = 0; i < width + 2; i++) {
+        cout << "#";
+    }
     cout << endl;
 
     // Logic for middle rows, snake head ('O'), and tail ('o') goes here...
+    for (int mapY = 0; mapY < height; mapY++) {
+        cout << "#";
+        for (int mapX = 0; mapX < width; mapX++) {
+            if ((mapX == x) && (mapY == y)) {
+                cout << "O";
+            }
+            else if ((mapX == fruitX) && (mapY == fruitY)) {
+                cout << "F";
+            }
+            else {
+                cout << " ";
+            }
+        }
+        cout << "#" << endl;
+    }
 
+    // Bottom Wall
+    for (int i = 0; i < width + 2; i++) {
+        cout << "#";
+    }
+
+    cout << endl;
     cout << "Score: " << score << endl;
 }
 
