@@ -27,7 +27,7 @@ Team Rating:
 
 
 
-**Team Member Name: Jennifer Hill   Role: Architect & Physics **
+**Team Member Name: Jennifer Hill   Role: Architect & Physics**
 
 Contributions:
 
