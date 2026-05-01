@@ -14,7 +14,7 @@ enum eDirection { STOP = 0, LEFT, RIGHT, UP, DOWN };
 eDirection dir;
 
 // Tail Data (For the Growth Specialist - Week 8 Arrays/Vectors)
-vector<int> tailX, tailY; 
+vector<int> tailX(100), tailY(100); 
 int nTail;
 
 void Setup() {
@@ -48,7 +48,16 @@ void Draw() {
                 cout << "F";
             }
             else {
-                cout << " ";
+                bool print = false;
+                for (int i = 0; i < nTail; ++i) {
+                    if ((tailX[i] == mapX) && (tailY[i] == mapY)) {
+                        cout << "o";
+                        print = true;
+                    }
+                }
+                if (!print) {
+                    cout << " ";
+                }
             }
         }
         cout << "#" << endl;
@@ -78,7 +87,30 @@ void Input() {
 
 void Logic() {
     // Architect & Growth Specialist:
+    // 4. Check if fruit is eaten (if x == fruitX && y == fruitY)
+    if ((x == fruitX) && (y == fruitY)) {
+        score += 10;
+        nTail++;
+        fruitX = rand() % width;
+        fruitY = rand() % height;
+    }
+
     // 1. Update tail positions (shifting coordinates in the vector)
+    int prevX = tailX[0];
+    int prevY = tailY[0];
+    int prev2X, prev2Y;
+    tailX[0] = x;
+    tailY[0] = y;
+
+    for (int i = 1; i < nTail; i++) {
+        prev2X = tailX[i];
+        prev2Y = tailY[i];
+        tailX[i] = prevX;
+        tailY[i] = prevY;
+        prevX = prev2X;
+        prevY = prev2Y;
+    }
+
     // 2. Update head position based on 'dir'
     switch (dir) {
         case LEFT:
@@ -109,7 +141,6 @@ void Logic() {
     else if (y < 0) {
         y = height;
     }
-    // 4. Check if fruit is eaten (if x == fruitX && y == fruitY)
 }
 
 int main() {
