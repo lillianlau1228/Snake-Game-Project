@@ -12,18 +12,22 @@
 Contributions:
 
 1. Which specific functions did you write or primary debug? (e.g., Logic(), Draw())
-    I wrote and debugged the Draw() function and some of the Logic() function. I wrote the code that draws the whole map, the code that handles when the snake eats a fruit, and the code that updates the coordinates for the snake's tail.
+
+I wrote and debugged the Draw() function and some of the Logic() function. I wrote the code that draws the whole map, the code that handles when the snake eats a fruit, and the code that updates the coordinates for the snake's tail.
 
 2. What was the biggest technical challenge you solved this week?
-    The biggest challenge for me was when I was fixing a bug for the snake's tail. There was a bug where parts of the snake's tail would appear in the corner. I fixed this by reordering the code.
+
+The biggest challenge for me was when I was fixing a bug for the snake's tail. There was a bug where parts of the snake's tail would appear in the corner. I fixed this by reordering the code.
 
 Team Rating:
 
 * On a scale of 1–5, how effectively did your team collaborate on the code logic? [5/5]
-    5 out of 5. Jennifer and I both worked effectively on the code logic.
+
+5 out of 5. Jennifer and I both worked effectively on the code logic.
 
 * Did every member contribute to the flowchart and final code? [Yes / No]
-    No, Brendan did not end up contributing to the final code.
+
+No, Brendan did not end up contributing to the final code.
 
 
 
