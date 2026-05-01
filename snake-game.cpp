@@ -136,7 +136,7 @@ void Logic() {
     }
 
     if(y>= height) {
-        y = height;
+        y = 0;
     }
     else if (y < 0) {
         y = height;
