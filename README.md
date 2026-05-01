@@ -1,7 +1,7 @@
 # Our Snake Game
 * Launch snake-game.exe to play our snake game
 * Collect the fruit to increase your score
-* We used VS Code to make our project
+* Use the C++ extension in VS Code and click the play button to compile
 
 
 
