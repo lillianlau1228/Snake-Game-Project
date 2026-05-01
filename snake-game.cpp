@@ -80,7 +80,35 @@ void Logic() {
     // Architect & Growth Specialist:
     // 1. Update tail positions (shifting coordinates in the vector)
     // 2. Update head position based on 'dir'
+    switch (dir) {
+        case LEFT:
+            x--;
+            break;
+        case RIGHT:
+            x++;
+            break;
+        case UP:
+            y--;
+            break;
+        case DOWN:
+            y++;
+            break;
+    }
+
     // 3. Check for collisions (Wall or Self)
+    if (x>= width) {
+        x=0;
+    }
+    else if (x < 0) {
+        x = width;
+    }
+
+    if(y>= height) {
+        y = height;
+    }
+    else if (y < 0) {
+        y = height;
+    }
     // 4. Check if fruit is eaten (if x == fruitX && y == fruitY)
 }
 
